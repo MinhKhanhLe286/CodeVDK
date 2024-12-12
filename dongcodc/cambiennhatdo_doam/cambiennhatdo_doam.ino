@@ -1,10 +1,11 @@
+// Dã check
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include <DHT.h>
 
 // Network credentials
-const char *SSID = "ESP8266-AP";
+const char *SSID = "ESP8266-NHOM66";
 const char *PSWD = "";
 
 // Sensor
@@ -182,13 +183,13 @@ void loop() {
   if (isnan(temperature) || isnan(humidity)) {
     Serial.println("Failed to read from DHT sensor!");
   } else {
-    Serial.print("Temperature: ");
-    Serial.print(temperature);
-    Serial.println(" °C");
+    // Serial.print("Temperature: ");
+    // Serial.print(temperature);
+    // Serial.println(" °C");
 
-    Serial.print("Humidity: ");
-    Serial.print(humidity);
-    Serial.println(" %");
+    // Serial.print("Humidity: ");
+    // Serial.print(humidity);
+    // Serial.println(" %");
   }
 
   delay(200);

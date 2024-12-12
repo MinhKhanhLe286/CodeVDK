@@ -3,7 +3,7 @@
 #include <ESPAsyncWebServer.h>
 
 // Network credentials
-const char *SSID = "ESP8266-AP";
+const char *SSID = "ESP8266-Nhom66";
 const char *PSWD = "";
 
 // Ultrasonic Sensor
@@ -173,9 +173,9 @@ void loop() {
   distance = duration * 0.034 / 2;
 
   // Output to Serial Monitor
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm");
+  // Serial.print("Distance: ");
+  // Serial.print(distance);
+  // Serial.println(" cm");
 
   delay(200);
 }

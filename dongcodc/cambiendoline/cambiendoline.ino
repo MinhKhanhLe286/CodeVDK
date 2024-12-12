@@ -1,3 +1,4 @@
+// Dã check oke
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
@@ -146,8 +147,8 @@ void loop() {
   line_sensor_value = digitalRead(LINE_SENSOR_PIN);
 
   // Output to Serial Monitor
-  Serial.print("Line Sensor Value: ");
-  Serial.println(line_sensor_value);
+  //Serial.print("Line Sensor Value: ");
+  //Serial.println(line_sensor_value);
 
   delay(200);
 }

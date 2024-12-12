@@ -1,9 +1,11 @@
+// dac check
+
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 
 // Network credentials
-const char *SSID = "ESP8266-AP";
+const char *SSID = "ESP8266-NHOM6";
 const char *PSWD = "";
 
 // Sensor
@@ -161,8 +163,8 @@ void loop() {
   light_sensor_value = analogRead(LIGHT_SENSOR_PIN);
 
   // Output to Serial Monitor
-  Serial.print("Light Sensor Value: ");
-  Serial.println(light_sensor_value);
+  // Serial.print("Light Sensor Value: ");
+  // Serial.println(light_sensor_value);
 
   delay(200);
 }

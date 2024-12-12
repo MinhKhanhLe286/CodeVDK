@@ -1,5 +1,6 @@
 // ĐỘNG CƠ SERVO 
 // Chọn esp8266 => NodeMCU 1.0 (ESP-12E Module)
+// test oke
 #include <Servo.h>
 Servo myservo;                 
 
@@ -17,7 +18,7 @@ int GasSensorValue;
 void setup() {
   Serial.begin(9600); 
   delay(1000);
-  WiFi.begin("OPPO Reno", "vanmanh999"); //SSID && Pasword
+  WiFi.begin("GT3", "88886666"); //SSID && Pasword
   while (WiFi.waitForConnectResult() != WL_CONNECTED) {
     Serial.println(".");
   }

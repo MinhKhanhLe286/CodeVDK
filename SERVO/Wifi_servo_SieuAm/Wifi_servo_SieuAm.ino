@@ -1,3 +1,5 @@
+// datess
+
 #include <Servo.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -19,7 +21,7 @@ void setup() {
   //**
   Serial.begin(9600); 
   delay(1000);
-  WiFi.begin("Redmi", "06042002"); //SSID && Pasword
+  WiFi.begin("GT3", "88886666"); //SSID && Pasword
   while (WiFi.waitForConnectResult() != WL_CONNECTED) {
     Serial.println(".");
   }
@@ -108,9 +110,9 @@ void loop() {
   if (true) {
     //quay servo thuáº­n theo gÃ³c INPUT
     myservo.write(receivedValue);
-    delay(1000);
+    delay(500);
     //chá»‰nh servo vá» vá»‹ trÃ­ 0 Ä‘á»™
     myservo.write(0);
-    delay(1000);
+    delay(500);
   }
 }

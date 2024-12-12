@@ -1,4 +1,5 @@
 // ĐỘNG CƠ SERVO 
+// dã test oke
 // Chọn esp8266 => NodeMCU 1.0 (ESP-12E Module)
 #include <Servo.h>
 Servo myservo;                 
@@ -20,7 +21,7 @@ int Joystick_sw = D3; // chân sw của joystick     (nối với chân D3 của
 void setup() {
   Serial.begin(9600); 
   delay(1000);
-  WiFi.begin("TP-LINK_59CE", "23112022"); //SSID && Pasword
+  WiFi.begin("GT3", "88886666"); //SSID && Pasword
   while (WiFi.waitForConnectResult() != WL_CONNECTED) {
     Serial.print(".");
   }

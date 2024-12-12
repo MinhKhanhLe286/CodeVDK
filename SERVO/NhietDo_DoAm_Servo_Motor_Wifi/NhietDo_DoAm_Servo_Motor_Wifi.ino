@@ -1,4 +1,5 @@
 // ĐỘNG CƠ SERVO 
+// OKe dã tets
 // Chọn esp8266 => NodeMCU 1.0 (ESP-12E Module)
 #include <Servo.h>
 Servo myservo;                 
@@ -22,7 +23,7 @@ float tempF;
 void setup() {
   Serial.begin(9600); 
   delay(1000);
-  WiFi.begin("Free 4G", "12345677"); //SSID && Pasword
+  WiFi.begin("GT3", "88886666"); //SSID && Pasword
   while (WiFi.waitForConnectResult() != WL_CONNECTED) {
     Serial.println(".");
   }
@@ -93,7 +94,7 @@ void handleReadSerial() {
   humi = HT.readHumidity(); 
   tempC = HT.readTemperature(); 
   tempF = HT.readTemperature(true); 
-  server.send(200, "text/plain", "Humidity:" + String(humi,0) + "%" + " Temprature:" + String(tempC,1) + "oC ~ " + String(tempF,1) + "oF" + "\n");
+  server.send(200, "text/plain", "Humidity:" + String(humi,0) + "%" + " Temprature:" + String(tempC,1) + "oC"+ "\n");
   
   Serial.print("Humidity:");
   Serial.print(humi,0); 
@@ -101,8 +102,7 @@ void handleReadSerial() {
   Serial.print(" Temprature:");
   Serial.print(tempC,1); 
   Serial.print("oC ~ "); 
-  Serial.print(tempF,1); 
-  Serial.println("oF");
+
 }
 
 // Nhận giá trị độ từ web để điều khiển servo 
